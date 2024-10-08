@@ -24,8 +24,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>UNLEASHING REASONING CAPABILITY OF LLMS VIA SCALABLE QUESTION SYNTHESIS FROM SCRATCH</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <title>ScaleQuest</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -47,165 +47,167 @@
 <body>
 
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">ScaleQuest</h1>
+          <h3 class="title is-2 publication-title">Unleashing Reasoning Capability of LLMs <br> via Scalable Question Synthesis from Scratch</h3>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a style="color:#008AD7;font-weight:normal;">Yuyang Ding</a>,
+            </span>
+            <span class="author-block">
+              <a style="color:#008AD7;font-weight:normal;">Xinyu Shi</a>,
+            </span>
+            <span class="author-block">
+              <a style="color:#008AD7;font-weight:normal;">Xiaobo Liang</a>,
+            </span>
+            <span class="author-block">
+              <a style="color:#008AD7;font-weight:normal;">Juntao Li</a>,
+            </span>
+            <span class="author-block">
+              <a style="color:#008AD7;font-weight:normal;">Qiaoming Zhu</a>,
+            </span>
+            <span class="author-block">
+              <a style="color:#008AD7;font-weight:normal;">Min Zhang</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Soochow University</span>
+          </div>
+
+          <!-- <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>Equal Contribution</span>
+          </div> -->
+
+          
+        <!-- <div class="column has-text-centered">
+          <h3 class="title is-3 publication-title">Improved Baselines with Visual Instruction Fine-tuning</h3>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              ,
+            </span>
+            <span class="author-block">
+              ,
+            </span>
+            <span class="author-block">
+              ,
+            </span>
+            <span class="author-block">
+              <a href="https://pages.cs.wisc.edu/~yongjaelee/" style="color:#f68946;font-weight:normal;">Yong Jae
+                Lee</a >
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> University of
+              Wisconsin-Madison</b></span>
+            <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Microsoft Research</span>
+          </div> -->
+
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">ScaleQuest</h1>
-            <h3 class="title is-2 publication-title">Unleashing Reasoning Capability of LLMs <br> via Scalable Question Synthesis from Scratch</h3>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a style="color:#f68946;font-weight:normal;">Yuyang Ding</a >,
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a >
               </span>
-              <span class="author-block">
-                <a style="color:#008AD7;font-weight:normal;">Xinyu Shi</a >,
+              <span class="link-block">
+                <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a >
               </span>
-              <span class="author-block">
-                <a style="color:#F2A900;font-weight:normal;">Xiaobo Liang</a >,
+              <span class="link-block">
+                <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-database"></i>
+                  </span>
+                  <span>Dataset</span>
+                </a >
               </span>
-              <span class="author-block">
-                Juntao Li,
+              <span class="link-block">
+                <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-share-square"></i>
+                  </span>
+                  <span>Model</span>
+                </a >
               </span>
-              <span class="author-block">
-                ,
-              </span>
-              <span class="author-block">
-                
-              </span>
-            </div>
-
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Soochow University</span>
-            </div>
-
-            <!-- <div class="is-size-6 publication-authors">
-              <span class="author-block"><sup>*</sup>Equal Contribution</span>
-            </div> -->
-
-            
-          <!-- <div class="column has-text-centered">
-            <h3 class="title is-3 publication-title">Improved Baselines with Visual Instruction Fine-tuning</h3>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                ,
-              </span>
-              <span class="author-block">
-                ,
-              </span>
-              <span class="author-block">
-                ,
-              </span>
-              <span class="author-block">
-                <a href="https://pages.cs.wisc.edu/~yongjaelee/" style="color:#f68946;font-weight:normal;">Yong Jae
-                  Lee</a >
-              </span>
-            </div>
-
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><b style="color:#f68946; font-weight:normal">&#x25B6 </b> University of
-                Wisconsin-Madison</b></span>
-              <span class="author-block"><b style="color:#008AD7; font-weight:normal">&#x25B6 </b> Microsoft Research</span>
-            </div> -->
-
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/2304.08485" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
-                  </a >
-                </span>
-                <span class="link-block">
-                  <a href="https://github.com/haotian-liu/LLaVA" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a >
-                </span>
-                <span class="link-block">
-                  <a href="https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-database"></i>
-                    </span>
-                    <span>Dataset</span>
-                  </a >
-                </span>
-                <span class="link-block">
-                  <a href="https://github.com/haotian-liu/LLaVA/blob/main/docs/MODEL_ZOO.md" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-share-square"></i>
-                    </span>
-                    <span>Model</span>
-                  </a >
-                </span>
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
 
 <!-- Teaser video-->
+ 
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
-        <!-- <source src="static/videos/banner_video.mp4" -->
-        <!-- type="video/mp4"> -->
-      <!-- </video> -->
       <h2 class="subtitle has-text-centered">
-        we introduce ScaleQuest, a scalable and novel data synthesis method that utilizes ``small-size'' (e.g., 7B) open-source models to generate questions from scratch without the need for seed data with complex augmentation constraints.
+        We introduce ScaleQuest, a scalable and novel data synthesis method<br>that utilizes "small-size" (e.g., 7B) open-source models to generate questions from scratch<br>without the need for seed data with complex augmentation constraints.
       </h2>
     </div>
   </div>
 </section>
+
 <!-- End teaser video -->
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
+<!-- <section class="section hero is-light">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            To address this, we introduce ScaleQuest, a scalable and novel data synthesis method that utilizes “smallsize”(e.g., 7B) open-source models to generate questions from scratch without the need for seed data with complex augmentation constraints. With the efffcient ScaleQuest, we automatically constructed a mathematical reasoning dataset consisting of 1 million problem-solution pairs, which are more effective than existing open-sourced datasets. It can universally increase the performance of mainstream open-source models (i.e., Mistral, Llama3, DeepSeekMath, and Qwen2-Math) by achieving 29.2% to 46.4% gains on MATH. Notably, simply ffne-tuning the Qwen2-Math-7B-Base model with our dataset can even surpass Qwen2-Math-7BInstruct, a strong and well-aligned model on closed-source data, and proprietary models such as GPT-4-Turbo and Claude-3.5 Sonnet.
+            We introduce ScaleQuest, a scalable and novel data synthesis method that utilizes "small-size" (e.g., 7B) open-source models to generate questions from scratch without the need for seed data with complex augmentation constraints.
           </p>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End paper abstract -->
 
 
 
 
 <!-- ### Method Overview-->
-<section class="hero is-small">
+<section class="hero is-small is-light">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <!-- Paper video. -->
-      <h2 class="title is-3">Method Overview</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-six-fifths">
+          <h2 class="title is-3">Method Overview</h2>
+        </div>
+      </div>
       <div class="columns is-centered">
-        <div class="column is-11">
+        <div class="column is-full-width">
           <div class="method-image">
-            <img src="/static/images/method.png">
+            <img src="./static/images/method.png">
           </div>
           <div class="desc">
             <ol>
               <li>
-                <b>Question Fine-Tuning (QFT)</b>: To activate the model’s question generation capability, we first perform Question Fine-Tuning (QFT), where we train the problem-solving model using a small set of problems. We train two question generators based on DeepSeekMath-7B-RL and Qwen2-Math-7B-Instruct, using 15K problems from the GSM8K and MATH training set.
+                <b>Question Fine-Tuning (QFT)</b>: To activate the model's question generation capability, we first perform Question Fine-Tuning (QFT), where we train the problem-solving model using a small set of problems. We train two question generators based on DeepSeekMath-7B-RL and Qwen2-Math-7B-Instruct, using 15K problems from the GSM8K and MATH training set.
               </li>
               <li>
                 <b>Question Preference Optimization (QPO)</b>: We further optimize the two problem generators through preference tuning, focusing primarily on two aspects: problem solvability and difficulty.
@@ -218,10 +220,10 @@
               </li>
             </ol>
           </div>
-          <div style="margin-top:20px;"></div>
+          <!-- <div style="margin-top:20px;"></div>
           <div class="method-image">
-            <img src="/static/images/dataset1.png">
-          </div>
+            <img src="./static/images/dataset1.png">
+          </div> -->
         </div>
       </div>
     </div>
@@ -230,13 +232,17 @@
 
 
 <!-- ### Dataset-->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <!-- Paper video. -->
-      <h2 class="title is-3">Dataset</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-six-fifths">
+          <h2 class="title is-3">Dataset</h2>
+        </div>
+      </div>
       <div class="columns is-centered">
-        <div class="column is-12">
+        <div class="column is-full-width">
           <div class="desc">
             With the efficient ScaleQuest, we automatically constructed a mathematical reasoning dataset consisting of 1 million problem-solution pairs, which are more effective than existing open-sourced datasets.
           </div>
@@ -259,26 +265,28 @@
 
 
 <!-- ### Performance of  ScaleQuest-->
-<section class="hero is-small">
+<section class="hero is-small is-light">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <!-- Paper video. -->
-      <h2 class="title is-3">Performance of  ScaleQuest</h2>
-      <div class="columns is-centered">
-        
-        <div class="column is-11">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-six-fifths">
+          <h2 class="title is-3">Performance of ScaleQuest</h2>
+        </div>
+      </div>
+        <div class="column is-full-width">
           <div class="desc">
-            It can universally increase the performance of mainstream open-source models (i.e., Mistral, Llama3, DeepSeekMath, and Qwen2-Math) by achieving 29.2% to 46.4% gains on MATH.
+            ScaleQuest can universally increase the performance of mainstream open-source models (i.e., Mistral, Llama3, DeepSeekMath, and Qwen2-Math) by achieving 29.2% to 46.4% gains on MATH.
             Notably, simply fine-tuning the Qwen2-Math-7B-Base model with our dataset can even surpass Qwen2-Math-7B-Instruct, a strong and well-aligned model on closed-source data, and proprietary models such as GPT-4-Turbo and Claude-3.5 Sonnet.
           </div>
           <div style="margin-top:20px;"></div>
           <div class="results1-image">
-            <img src="/static/images/results1.png">
+            <img src="./static/images/results1.png">
           </div>
           
           <div style="margin-top:20px;"></div>
-          <div class="method-image">
-            <img src="/static/images/results2.png">
+          <div class="results2-image">
+            <img src="./static/images/results2.png">
           </div>
         </div>
       </div>
@@ -288,43 +296,29 @@
 
 
 <!-- ### Performance of  ScaleQuest-->
-<section class="hero is-small is-light">
+<section class="hero is-small">
   <div class="hero-body">
-    <div class="container">
+    <div class="container is-max-desktop">
       <!-- Paper video. -->
-      <h2 class="title is-3">Performance of  ScaleQuest</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-six-fifths">
+          <h2 class="title is-3">Cost Analysis</h2>
+        </div>
+      </div>
       <div class="columns is-centered">
-        
-        <div class="column is-11">
+        <div class="column is-full-width">
           <div class="desc">
-            The data synthesis process was conducted on a server with 8 A100-40G-PCIe GPUs. Generating 1 million data samples required only 522.9 GPU hours (approximately 2.7 days on an 8-GPU server), with an estimated cost of \$680.8 for cloud server rental. This is only about 10\% of the cost of generating the same data using GPT-4o. This demonstrates that our data generation method is significantly more cost-effective.
+            The data synthesis process was conducted on a server with 8 A100-40G-PCIe GPUs. Generating 1 million data samples required only 522.9 GPU hours (approximately 2.7 days on an 8-GPU server), with an estimated cost of \$680.8 for cloud server rental. This is only about 10% of the cost of generating the same data using GPT-4o. This demonstrates that our data generation method is significantly more cost-effective.
           </div>
           <div style="margin-top:20px;"></div>
           <div class="results1-image">
-            <img src="/static/images/cost.png">
+            <img src="./static/images/cost.png">
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/ICLR25_Math.pdf" width="100%" height="550">
-      </iframe>  
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
@@ -337,8 +331,8 @@
 <!--End BibTex citation -->
 
 
-  <footer class="footer">
-  <div class="container">
+ <footer class="footer">
+  <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
